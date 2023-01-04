@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UseAgain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div>
+                    <a href="Acceuil.html"><img src="logonav.png" width="30%" height="20%" alt="logoua"></a>
+                </div>
+                <div class="navlist">
+                    <div class="menu-item hover"><a href="createur.html">CRÉ'ATEUR</a></div>
+                    <div class="menu-item hover"><a href="produits.html">PRODUITS</a></div>
+                    <div class="menu-item hover"><a href="quisommesnous.html">QUI SOMMES NOUS ?</a></div>
+                    <div class="menu-item hover"><a href="contact.html">CONTACT</a></div>
+                    <div class="menu-item nav-logo">
+                      <div class="dropdown">
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="Profil.html">Connexion</a>
+                          <a href="Profil.html">Créer un compte</a>
+                          <a href="commande.html">Commandes</a>
+                        </div>
+                      </div>
+                        <img  class="dropbtn"  onclick="myFunction()" src="profil.png" width="30px" height="30px" alt="logoprofil">
+                    </div>
+                    <div class="menu-item nav-logo">
+                      <a href="panier.html"><img src="panier.png" width="30px" height="30px" alt="logopanier"></a>
+                    </div>
+                </div>
+            </nav>
+        </header>        
+        <main>
+        <section class="cheminproduit">
+            <div class="cheminuno">
+                <p><div class="lienpcgamingbis"><a href="Produits.html">Produits - PC Gamer - PC Gamer BRONZE Pro-AMD (Sans Windows)</a></div></p>
+                <hr class="ligneasus">
+                <p><h2>PC Gamer BRONZE Pro-AMD (Sans Windows)</h2></p>
+                <P><h3>700€</h3></P>
+            </div>
+        </section>
+        <section class="asusrogstrixdescription">
+            <div class="photoasusstrix">
+                <img src="pcgamerbronze.png" width="430px" height="450px" alt="pcgamerbronze">
+            </div>
+            <div class="description">
+            <p>Ce PC Gamer BRONZE Pro-AMD (Sans Windows)est un PC que nous avons construit nous-même à l’aide de composants envoyés par nos utilisateurs. 
+                Malheureusement, nous ne pouvons pas vous fournir Windows avec celui-ci. </p>
+            <ul>
+                <li><h4>Fiche Technique:</h4></li>
+                <li>Boitier : Cooler Master MasterBox MB510L - Noir/Rouge</li>
+                <li>Processeur : AMD Ryzen 5 3600 (3.6 GHz)</li>
+                <li>Mémoire Vive: DDR4 Corsair Vengeance LPX Noir - 16 Go (2 x 8 Go) 3200 MHz </li>
+                <li>Stockage : 	512 Go SSD</li>
+                <li>Carte graphique : Asus GeForce RTX 3050 DUAL O8G </li>
+                <li>Carte mère : Gigabyte B550M DS3H</li>
+                <li>Audio : Type 1 Out/In, Casque/Micro</li>
+                <li>Réseau : LAN, Wi-Fi 5 (802.11ac), Bluetooth 5.0</li>
+                <li>Alimentation : Textorm TX650M+ - 650W</li>
+                <li>Système d'exploitation : Aucun</li>
+                <li>Dimensions : 496 x 217 x 468 mm</li>
+                <li>Poids : 8 kg</li>
+            </div>
+            </div>    
+            </ul>
+            
+        </section>
+        <section class="prixpanier">
+            <div class="ajpanier">
+                <p> Ajouter au panier</p>
+            </div>
+        </section>
+        </main>
+    </div>
+</div>
+<footer>
+  <div class="footer-left">
+    <div class="footer-section">
+      <h3>Acheter</h3>
+      <ul class="ulg">
+        <li><a href="createur.html">Cre'ateur</a></li>
+        <li><a href="Produits.html">Produits</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Information</h3>
+      <ul class="ulg">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="quisommesnous.html">Qui Sommes nous ?</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-middle">
+    <a  href="#"><img class="logotiktok" src="tiktok.png" width="40px" height="40px" alt="TikTok logo"></a>
+    <a href="#"><img src="instagram.png" width="30px" height="30px"alt="Instagram logo"></a>
+    <a href="#"><img src="facebook.png" width="30px" height="30px" alt="Facebook logo"></a>
+    <a  href="#"><img class="logotwitter" src="twitter.png"  width="40px" height="40px" alt="Twitter logo"></a>
+  </div>
+  <div class="footer-right">
+    <form>
+      <input type="email" id="email" placeholder="Adresse E-mail"><br>
+      <button type="submit">S'inscrire</button>
+    </form>
+  </div>
+</footer>
+      <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+
+
+
+    </body>
+    </html>

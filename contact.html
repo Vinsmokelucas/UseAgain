@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UseAgain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+			<nav>
+                <div>
+                    <a href="Acceuil.html"><img src="logonav.png" width="30%" height="20%" alt="logoua"></a>
+                </div>
+                <div class="navlist">
+                    <div class="menu-item hover"><a href="createur.html">CRÉ'ATEUR</a></div>
+                    <div class="menu-item hover"><a href="produits.html">PRODUITS</a></div>
+                    <div class="menu-item hover"><a href="quisommesnous.html">QUI SOMMES NOUS ?</a></div>
+                    <div class="menu-item hover"><a href="contact.html">CONTACT</a></div>
+                    <div class="menu-item nav-logo">
+                          <div class="dropdown">
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="Profil.html">Connexion</a>
+                              <a href="Profil.html">Créer un compte</a>
+							  <a href="commande.html">Commandes</a>
+                            </div>
+                          </div>
+                          <img class="dropbtn"  onclick="myFunction()" src="profil.png"  width="30px" height="30px" alt="logoprofil">
+                        
+                    </div>
+                    <div class="menu-item nav-logo">
+                        <a href="panier.html"><img src="panier.png" width="30px" height="30px" alt="logopanier"></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+		<section>
+			<div>
+			<h2 class="contact">CONTACT</h2>
+			</div>
+		</section>
+		<div class="discute">
+			<p class="phraseform">Discutez avec nous. <br>
+				<br>
+				Du lundi au vendredi<br>
+				<br>
+				09:00 - 18:00</p>
+
+		</div>
+		<section class="formtit">
+			
+			<div class="formulaire">
+				<p class="phraseform">Un problème ? Une question ? <br>Contactez-nous.</p>
+		<form class="formuno"method="POST" action="">
+			<input class="inuno" type="text" name="nom" placeholder="Votre nom" value="" /><br /><br />
+			<input class="inuno" type="email" name="mail" placeholder="Votre email" value="" /><br /><br />
+			<textarea class="textuno" name="message" placeholder="Votre message"></textarea><br /><br />
+			<input class="inuno" type="submit" value="Envoyer !" name="mailform"/>
+		</form>
+		<?php
+		if(isset($msg))
+		{
+			echo $msg;
+		}
+		?>
+	</div>
+
+	<div class="formulairedos">
+		<p class="phraseform">Du matériel en trop? <br>
+		demandez nous.</p>
+<form class="formdos"method="POST" action="">
+	<input class="indos" type="text" name="nom" placeholder="Votre nom" value="" /><br /><br />
+	<input class="indos" type="email" name="mail" placeholder="Votre email" value="" /><br /><br />
+	<textarea class="textdos" name="message" placeholder="Votre message"></textarea><br /><br />
+	<input class="indos" type="submit" value="Envoyer !" name="mailform"/>
+</form>
+<?php
+if(isset($msg))
+{
+	echo $msg;
+}
+?>
+</div>
+	</section>
+
+	</div>
+	<footer>
+        <div class="footer-left">
+          <div class="footer-section">
+            <h3>Acheter</h3>
+			<ul class="ulg">
+				<li><a href="createur.html">Cre'ateur</a></li>
+				<li><a href="Produits.html">Produits</a></li>
+			  </ul>
+			</div>
+			<div class="footer-section">
+			  <h3>Information</h3>
+			  <ul class="ulg">
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="quisommesnous.html">Qui Sommes nous ?</a></li>
+			  </ul>
+          </div>
+        </div>
+        <div class="footer-middle">
+          <a  href="#"><img class="logotiktok" src="tiktok.png" width="40px" height="40px" alt="TikTok logo"></a>
+          <a href="#"><img src="instagram.png" width="30px" height="30px"alt="Instagram logo"></a>
+          <a href="#"><img src="facebook.png" width="30px" height="30px" alt="Facebook logo"></a>
+          <a  href="#"><img class="logotwitter" src="twitter.png"  width="40px" height="40px" alt="Twitter logo"></a>
+        </div>
+        <div class="footer-right">
+          <form>
+            <input type="email" id="email" placeholder="Adresse E-mail"><br>
+            <button type="submit">S'inscrire</button>
+          </form>
+        </div>
+      </footer>
+
+	  <script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		  document.getElementById("myDropdown").classList.toggle("show");
+		}
+		
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+			  var openDropdown = dropdowns[i];
+			  if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			  }
+			}
+		  }
+		}
+		</script>
+		
+	</body>
+	</html>
